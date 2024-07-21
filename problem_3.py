@@ -2,11 +2,11 @@ def display_right_angle_triangle(n):
     for i in range(1, n + 1):
         print('1 ' * i)
 
-##################################################
+######################################################
 
 def display_palindromic_triangle(n):
     for i in range(1, n + 1):
-#####################################################
+########################################################
         left_part = ''.join(str(x) for x in range(1, i + 1))
         right_part = left_part[-2::-1]  
         row = left_part + right_part
@@ -32,7 +32,7 @@ def main():
         print("4. Exit")
         
         choice = input("Enter your choice (1-4): ")
-       ##############################################
+       ##################################################
         if choice == '1':
             try:
                 rows = int(input("Enter the number of lines: "))
@@ -40,14 +40,14 @@ def main():
             except ValueError:
                 print("Please enter a valid integer.")
         elif choice == '2':
-        ##########################################
+        ################################################
             try:
                 rows = int(input("Enter the number of lines: "))
                 display_palindromic_triangle(rows)
             except ValueError:
                 print("Please enter a valid integer.")
 
-        ############################################
+        #################################################
         elif choice == '3':
             help_menu()
         elif choice == '4':
